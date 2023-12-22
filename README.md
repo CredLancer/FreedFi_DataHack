@@ -19,39 +19,46 @@ FreeFi introduces a community-driven DeFi lending platform facilitating private,
 
 ## About Smart Contracts: 
 
-Owner and Balances:
+#### Owner and Balances:
 
-Data: Tracks the contract owner's address (owner) and user balances (balances).
-Purpose: Manages ownership and user balances.
-Borrowed Amounts and Active Loans:
+- Data: Tracks the contract owner's address (owner) and user balances (balances).
+- Purpose: Manages ownership and user balances.
 
-Data: Records borrowed amounts (borrowedAmounts) and active loan status (hasActiveLoan).
-Purpose: Manages loan-related information and enforces one loan at a time per borrower.
-Business Insights:
-Events (Borrowed and Repaid):
+#### Borrowed Amounts and Active Loans:
 
-Data Emitted: Logs business activities through events (Borrowed and Repaid).
-Purpose: Provides a transparent record of key transactions.
-Deposit, Borrow, and Repay Functions:
+- Data: Records borrowed amounts (borrowedAmounts) and active loan status (hasActiveLoan).
+- Purpose: Manages loan-related information and enforces one loan at a time per borrower.
 
-Data Affected: Modifies balances and loan-related data.
-Purpose: Facilitates core lending and repayment actions.
-Balance and Borrowed Amount Queries:
+### Business Insights:
+#### Events (Borrowed and Repaid):
 
-Data Accessed: Allows users to check balances and borrowed amounts.
-Purpose: Enhances user experience and financial visibility.
-Business Considerations:
-Loan Commitment Concept:
+- Data Emitted: Logs business activities through events (Borrowed and Repaid).
+- Purpose: Provides a transparent record of key transactions.
 
-Concept Introduced: Users may agree to an initial "loan commitment amount."
-Purpose: Indicates user willingness for potential loans.
-Security Considerations:
+#### Deposit, Borrow, and Repay Functions:
 
-Error Handling and Modifiers: Enhances security with error handling and access control.
-Purpose: Prevents unauthorized or erroneous actions.
-Limitation on Active Loans:
+- Data Affected: Modifies balances and loan-related data.
+- Purpose: Facilitates core lending and repayment actions.
 
-Implementation Choice: Users are limited to one active loan.
-Purpose: Mitigates risk by restricting multiple simultaneous loans.
+#### Balance and Borrowed Amount Queries:
+
+- Data Accessed: Allows users to check balances and borrowed amounts.
+- Purpose: Enhances user experience and financial visibility.
+
+### Business Considerations:
+#### Loan Commitment Concept:
+
+- Concept Introduced: Users may agree to an initial "loan commitment amount."
+- Purpose: Indicates user willingness for potential loans.
+
+#### Security Considerations:
+
+- Error Handling and Modifiers: Enhances security with error handling and access control.
+- Purpose: Prevents unauthorized or erroneous actions.
+
+#### Limitation on Active Loans:
+
+- Implementation Choice: Users are limited to one active loan.
+- Purpose: Mitigates risk by restricting multiple simultaneous loans.
 
 In summary, the smart contract manages ownership, user balances, loans, and provides insights through events. It introduces a loan commitment concept and security features, including access control and error handling. The limitation on active loans enhances risk management.
